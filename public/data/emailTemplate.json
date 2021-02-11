@@ -6,5 +6,9 @@
     "domiciliuDiferit": {
         "subject": "Luare în evidență",
         "body": "Pot fi contactat la numărul de telefon {Număr telefon personal} sau la numărul {Număr telefon persoană apropiată (membru familie) care să răspundă}. Locuiesc efectiv la următoarea adresă: {Adresa la care locuiți efectiv}"
+    },
+    "referatEvaluare": {
+        "subject": "Contact întocmire referat {Numele dumneavoastră}",
+        "body": "Pot fi contactat la numărul de telefon {Număr telefon personal} sau la numărul {Număr telefon persoană apropiată (membru familie) care să răspundă}."
     }
 }

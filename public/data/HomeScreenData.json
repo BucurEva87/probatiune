@@ -27,7 +27,7 @@
                         {
                             "id": "penal_fine",
                             "ref": "penalFineRef",
-                            "text": "Amenda penala transformata in Munca in Folosul Comunitatii"
+                            "text": "Amenda penala transformata in Munca neremunerata in Folosul Comunitatii"
                         },
                         {
                             "id": "parole",
@@ -37,7 +37,7 @@
                         {
                             "id": "prosecution",
                             "ref": "prosecutionRef",
-                            "text": "Procurorul a dispus renuntarea la urmarirea penala si prestarea unei Munci in Folosul Comunitatii, fiind mentionat si Serviciul de Probatiune"
+                            "text": "Procurorul a dispus renuntarea la urmarirea penala si prestarea unei Munci neremunerate in Folosul Comunitatii, fiind mentionat si Serviciul de Probatiune"
                         },
                         {
                             "id": "prosecution2",

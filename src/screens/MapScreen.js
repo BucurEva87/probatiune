@@ -40,9 +40,9 @@ export default function MapScreen() {
         }).then(function(response) {
             return response.json();
         }).then(function(result) {
-            setServiciu(result.find(s => s.id == id));
+            setServiciu(result.find(s => +s.id === +id));
         });
-    }, []);
+    }, [id]);
 
     if (!serviciu) {
         return <div>Loading...</div>;
@@ -124,7 +124,7 @@ export default function MapScreen() {
                     <Table className="mb-2">
                         <tr>
                             <td><strong>Subiect:</strong></td>
-                            <td>Luare în evidență</td>
+                            <td>{situation === 1 ? 'Luare în evidență' : `Contact întocmire referat ${<strong style={{ color: 'red' }}>Numele dumneavoastră</strong>}`}</td>
                         </tr>
                         <tr>
                             <td><strong>Mesaj:</strong></td>
