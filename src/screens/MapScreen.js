@@ -13,6 +13,9 @@ import iconRetina from 'leaflet/dist/images/marker-icon-2x.png';
 import icon from 'leaflet/dist/images/marker-icon.png';
 import iconShadow from 'leaflet/dist/images/marker-shadow.png';
 
+import MediaAudio from '../components/MediaAudio';
+import { useGlobal } from '../contexts/GlobalContext';
+
 let DefaultIcon = L.icon({
     iconRetinaUrl: iconRetina,
     iconUrl: icon,
@@ -26,6 +29,7 @@ export default function MapScreen() {
     const [serviciu, setServiciu] = useState(null);
     const [modalShow, setModalShow] = useState(false);
     const history = useHistory();
+    const { situation } = useGlobal();
 
     useEffect(() => {
         fetch(`${process.env.PUBLIC_URL}/data/servicii.json`, {
@@ -62,6 +66,7 @@ export default function MapScreen() {
                     </Popup>
                 </Marker>
             </MapContainer>
+
             <Table responsive style={{ 
                 width: '46vw', 
                 textAlign: 'center', 
@@ -69,6 +74,13 @@ export default function MapScreen() {
                 marginLeft: '27vw' 
             }}>
                 <tbody>
+                    {situation === 1 &&
+                        <tr>
+                            <td style={{ textAlign: 'center' }} colSpan={3}>
+                                <MediaAudio source={`${process.env.PUBLIC_URL}/media/mesaj.mp3`} />
+                            </td>
+                        </tr>
+                    }
                     <tr>
                         <td style={{ textAlign: 'left' }}><FontAwesomeIcon icon={faMapMarkedAlt} /> Adresa</td>
                         <td colSpan={2}>{serviciu.address.full}</td>
@@ -76,7 +88,7 @@ export default function MapScreen() {
                     <tr>
                         <td style={{ textAlign: 'left' }}><FontAwesomeIcon icon={faPhoneAlt} /> Telefon</td>
                         <td colSpan={2}>{serviciu.phones.map((p, i) => {
-                            return <><a href={`tel:+4${p}`} key={i}>{p}</a><br /></>;
+                            return <><a href={`tel:+4${p.split(' (')[0]}`} key={i}>{p}</a><br /></>;
                         })}</td>
                     </tr>
                     {serviciu.faxes && <tr>
@@ -133,7 +145,7 @@ export default function MapScreen() {
                         </tr>
                         <tr>
                             <td style={{ fontWeight: 'bold', color: 'red' }}>ATENTIE!</td>
-                            <td>In cazul in care apar modificari cu privire la datele dumneavoastra (schimbarea adresei la care locuiti efectiv, schimbarea domiciliului, eliberarea unui nou act de identitate asemenea celui a carei copie ati atasat-o in mail-ul principal) reveniti cu un mail in care sa faceti cunoscute aceste modificari.</td>
+                            <td>In cazul in care apar modificari cu privire la datele dumneavoastra (schimbarea adresei la care locuiti efectiv, schimbarea domiciliului, eliberarea unui nou act de identitate asemenea celui a carui copie ati atasat-o in mail-ul principal) reveniti cu un mail in care sa faceti cunoscute aceste modificari.</td>
                         </tr>
                     </Table>
                 </Modal.Body>

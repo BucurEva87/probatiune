@@ -1,0 +1,8 @@
+{
+    "jumbotron": {
+        "title": "Selectati Judetul",
+        "content": "Va rugam sa selectati din lista de mai jos Serviciul de Probatiune mentionat in dispozitivul sentintei dumneavoastra",
+        "content2": "Va rugam sa selectati din lista de mai jos Serviciul de Probatiune mentionat in dispozitia procurorului / judecatorului",
+        "buttonText": "Continuati catre informatiile despre Serviciul de Probatiune"
+    }
+}

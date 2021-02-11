@@ -1,0 +1,8 @@
+{
+    "screens": {
+        "home": {
+            "no_ultimate": "Ne pare rau, dar, atat timp cat o hotarare definitiva nu a fost pronuntata de catre Instanta de judecata, nu va puteti adresa Serviciului de Probatiune. Hotararea pe care o aveti in momentul actual poate suferi schimbari de-a lungul etapelor pe care procesul le mai are de parcurs. Reveniti in momentul in care o hotarare definitiva este pronuntata (doar daca in acea hotarare definitiva Serviciul de Probatiune este mentionat). Va dorim o zi buna!",
+            "no_authority": "Ne pare rau, dar, desi aveti o hotarare definitiva pronuntata de catre o Instanta de judecata, se pare ca aceasta nu contine niciun punct care sa presupuna implicarea Serviciului de Probatiune in cazul dumneavoastra."
+        }
+    }
+}

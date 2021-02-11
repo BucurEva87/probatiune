@@ -1,0 +1,68 @@
+{
+    "jumbotron": {
+        "title": "Probatiune",
+        "content": "Bun venit! Inainte de toate sa verificam daca indepliniti criteriile pentru a folosi aceasta aplicatie. Apasand pe butonul de mai jos veti raspunde cu \"da\" sau \"nu\" (printr-o bifa) unor intrebari preliminare.",
+        "buttonText": "Verifica!"
+    },
+    "modal": {
+        "title": "Intrebari preliminare",
+        "content": {
+            "criteria": [
+                {
+                    "id": "ultimate",
+                    "ref": "ultimateRef",
+                    "text": "A fost dispusa o condamnare definitiva in dosarul dumneavoastra?",
+                    "subcategory_text": "In hotararea definitiva a fost dispusa una dintre urmatoarele masuri?",
+                    "children": [
+                        {
+                            "id": "postpone",
+                            "ref": "postponeRef",
+                            "text": "Amanarea aplicarii pedepsei"
+                        },
+                        {
+                            "id": "suspension",
+                            "ref": "suspensionRef",
+                            "text": "Suspendarea pedepsei sub supraveghere"
+                        },
+                        {
+                            "id": "penal_fine",
+                            "ref": "penalFineRef",
+                            "text": "Amenda penala transformata in Munca in Folosul Comunitatii"
+                        },
+                        {
+                            "id": "parole",
+                            "ref": "paroleRef",
+                            "text": "Lliberare conditionata cu un rest de pedeapsa de 2 ani sau mai mare, cu dispunerea unor masuri de supraveghere si/sau obligatii"
+                        },
+                        {
+                            "id": "prosecution",
+                            "ref": "prosecutionRef",
+                            "text": "Procurorul a dispus renuntarea la urmarirea penala si prestarea unei Munci in Folosul Comunitatii, fiind mentionat si Serviciul de Probatiune"
+                        },
+                        {
+                            "id": "prosecution2",
+                            "ref": "prosecution2Ref",
+                            "text": "Procurorul a dispus renuntarea la urmarirea penala si frecventarea unui program de consiliere derulat sau monitorizat de Serviciul de Probatiune"
+                        },
+                        {
+                            "id": "minors",
+                            "ref": "minorsRef",
+                            "text": "Masuri educative minori"
+                        }
+                    ]
+                },
+                {
+                    "id": "report_minor",
+                    "ref": "reportMinorRef",
+                    "text": "Sunteti inculpat minor si organele judiciare au solicitat intocmirea unui referat de evaluare de catre Serviciul de Probatiune?"
+                },
+                {
+                    "id": "report_major",
+                    "ref": "reportMajorRef",
+                    "text": "Sunteti inculpat major, iar procurorul sau Instanta de Judecata a solicitat intocmirea unui raport de evaluare de catre Serviciul de Probatiune"
+                }
+            ]
+        },
+        "buttonText": "Finalizati"
+    }
+}
